@@ -1,8 +1,9 @@
-import './App.css';
 import Sidebar from './components/Sidebar';
 import CardList from './components/CardList';
 import FirstRow from './components/FirstRow';
 import SecondRow from './components/SecondRow';
+import CardDetail from './components/CardDetail';
+import './App.css';
 
 const mainStyle = {
   margin: '0 3rem 1rem 7rem',
@@ -19,6 +20,7 @@ function App() {
         <SecondRow />
         <div style={{ display: 'flex', flexDirection: 'row', height: '80%' }}>
           <CardList />
+          <CardDetail />
         </div>
       </div>
     </>

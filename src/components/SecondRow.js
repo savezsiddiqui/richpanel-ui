@@ -13,11 +13,26 @@ const conversationStyle = {
     color: '#212121'
 }
 
+const inputContainerStyle = {
+    display: 'flex',
+    flexDirection: 'row',
+    border: '0.2rem solid #e0e0e0',
+    borderRadius: '16px',
+    padding:'0 0.5rem',
+    margin: '1rem 0.5rem'
+}
+
+const iconStyle = {
+    padding: '5px',
+    color: 'gray'
+}
+
 const SecondRow = () => {
     return (
         <div style={topbarStyle}>
             <div style={conversationStyle}>Conversations</div>
-            <div>
+            <div style={inputContainerStyle}>
+                <i style={iconStyle} className="fas fa-search"></i>
                 <input
                     type='text'
                     placeholder='Quick Search'

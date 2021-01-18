@@ -6,7 +6,7 @@ const cardStyle = {
     borderRadius: '8px',
     padding: '0.5rem',
     margin: '0.5rem',
-    fontSize: '0.8rem',
+    fontSize: '0.85rem',
     boxShadow: '0 0 2px #eeeeee'
 }
 

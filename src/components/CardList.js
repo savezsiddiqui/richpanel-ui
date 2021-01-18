@@ -12,15 +12,17 @@ const cardlistStyle = {
 
 const CardList = () => {
 
-    const [data, setData] = useState({});
+    const [data, setData] = useState([]);
 
     useEffect(() => {
         const fetchData = async () => {
             const _data = await axios.get('https://jsonplaceholder.typicode.com/comments');
+            console.log(_data.data);
             setData(_data.data);
         }
         fetchData();
     })
+
     return (
         <div style={cardlistStyle}>
             {data.map(item =>
