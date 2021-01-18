@@ -17,13 +17,13 @@ const inputContainerStyle = {
     display: 'flex',
     flexDirection: 'row',
     border: '0.2rem solid #e0e0e0',
-    borderRadius: '16px',
-    padding:'0 0.5rem',
+    borderRadius: '24px',
+    padding: '0 0.5rem',
     margin: '1rem 0.5rem'
 }
 
 const iconStyle = {
-    padding: '5px',
+    padding: '0.5rem',
     color: 'gray'
 }
 
@@ -39,7 +39,8 @@ const SecondRow = () => {
                     id='searchbox'
                 />
             </div>
-            <div>
+            <div style={{ ...inputContainerStyle, background: '#e0e0e0' }}>
+                <i style={iconStyle} className="fas fa-sliders-h"></i>
                 <button id='filter-button'>Filter</button>
             </div>
         </div>

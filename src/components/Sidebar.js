@@ -3,7 +3,7 @@ import React from 'react'
 const sidebarStyle = {
     height: '100vh',
     width: '3rem',
-    backgroundColor: '#e0e0e0',
+    backgroundColor: '#eeeeee',
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'space-between',

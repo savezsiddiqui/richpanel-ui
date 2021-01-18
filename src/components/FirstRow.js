@@ -5,7 +5,9 @@ const topbarStyle = {
     flexDirection: 'row',
     color: '#757575',
     justifyContent: 'space-between',
-    fontSize: '14px'
+    fontSize: '0.9rem',
+    padding: '0 0.5rem',
+    width:'90%'
 }
 
 const sessionStyle = {
