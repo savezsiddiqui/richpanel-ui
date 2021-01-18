@@ -1,24 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
+import Sidebar from './components/Sidebar';
+import CardList from './components/CardList';
+import FirstRow from './components/FirstRow';
+import SecondRow from './components/SecondRow';
+
+const mainStyle = {
+  margin: '0 3rem 1rem 7rem',
+  height: '100%',
+  width: '100'
+}
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Sidebar />
+      <div style={mainStyle}>
+        <FirstRow />
+        <SecondRow />
+        <div style={{ display: 'flex', flexDirection: 'row', height: '80%' }}>
+          <CardList />
+        </div>
+      </div>
+    </>
   );
 }
 
