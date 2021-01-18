@@ -55,7 +55,7 @@ const CardDetail = () => {
             <div style={{ display: 'flex', flexDirection: 'column' }}>
                 <ChatCard name={'Savez'} body={'hello there '} />
             </div>
-            <i style={{ color: '#8d8d8d', position: 'absolute', bottom: '3rem', left: '3rem' }} className="far fa-user-circle"></i>
+            <i style={{ color: '#8d8d8d', position: 'absolute', bottom: '3rem', left: '5rem' }} className="far fa-user-circle"></i>
             <div style={inputContainerStyle}>
                 <input
                     id='reply-button'

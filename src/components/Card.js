@@ -12,8 +12,8 @@ const cardStyle = {
 
 const Card = ({ name, body }) => {
 
-    if (name.length > 26)
-        name = name.slice(0, 26) + '...'
+    if (name.length > 20)
+        name = name.slice(0, 20) + '...'
 
     if (body.length > 58)
         body = body.slice(0, 58) + '...'
@@ -27,7 +27,7 @@ const Card = ({ name, body }) => {
                 <div style={{ display: 'flex', flexDirection: 'column', padding: '0 1.5rem' }}>
                     <div><b> {name} </b></div>
                     <div style={{
-                        maxHeight: '2.4rem',
+                        maxHeight: '3rem',
                         overflow: 'hidden'
                     }}> {body} </div>
                 </div>
