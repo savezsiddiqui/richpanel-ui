@@ -1,4 +1,4 @@
-import React from 'react'
+import ChatCard from './ChatCard';
 
 const cardStyle = {
     border: '0.1rem solid #e0e0e0',
@@ -52,8 +52,8 @@ const CardDetail = () => {
     return (
         <div style={cardStyle}>
             <TopBar />
-            <div style={{ padding: '0.5rem 2rem' }}>
-                data will be displayed here
+            <div style={{ display: 'flex', flexDirection: 'column' }}>
+                <ChatCard name={'Savez'} body={'hello there '} />
             </div>
             <i style={{ color: '#8d8d8d', position: 'absolute', bottom: '3rem', left: '3rem' }} className="far fa-user-circle"></i>
             <div style={inputContainerStyle}>
